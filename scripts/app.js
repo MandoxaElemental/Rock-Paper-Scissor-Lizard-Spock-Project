@@ -15,10 +15,13 @@ const getCPU = async () => {
     "https://greinaresrpsls-f0gkb5h3ftcbe2e3.westus-01.azurewebsites.net/gameplay/RPSLS"
   );
   const data = await response.text();
-  console.log(data);
+  CPUChoice = data;
+  GameResult();
 };
 
 function GameResult() {
+  console.log(PlayerChoice);
+  console.log(CPUChoice);
   switch (PlayerChoice) {
     case "Kleavor":
       if (CPUChoice == "Kleavor") {
@@ -45,54 +48,86 @@ function GameResult() {
     case "Scyther":
       if (CPUChoice == "Kleavor") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        PlayerOneScore++
+        Counter++
       } else if (CPUChoice == "Scyther") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; TIE GAME`;
       } else if (CPUChoice == "Scizor") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        PlayerTwoScore++
+        Counter++
       } else if (CPUChoice == "Scrafty") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        PlayerTwoScore++
+        Counter++
       } else if (CPUChoice == "Mewtwo") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        PlayerOneScore++
+        Counter++
       }
       break;
 
     case "Scizor":
       if (CPUChoice == "Kleavor") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        PlayerTwoScore++
+        Counter++
       } else if (CPUChoice == "Scyther") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        PlayerOneScore++
+        Counter++
       } else if (CPUChoice == "Scizor") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; TIE GAME`;
       } else if (CPUChoice == "Scrafty") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        PlayerOneScore++
+        Counter++
       } else if (CPUChoice == "Mewtwo") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        PlayerTwoScore++
+        Counter++
       }
       break;
 
     case "Scrafty":
       if (CPUChoice == "Kleavor") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        PlayerTwoScore++
+        Counter++
       } else if (CPUChoice == "Scyther") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        PlayerOneScore++
+        Counter++
       } else if (CPUChoice == "Scizor") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        PlayerTwoScore++
+        Counter++
       } else if (CPUChoice == "Scrafty") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU TIE`;
       } else if (CPUChoice == "Mewtwo") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        PlayerOneScore++
+        Counter++
       }
       break;
 
     case "Mewtwo":
       if (CPUChoice == "Kleavor") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        PlayerOneScore++
+        Counter++
       } else if (CPUChoice == "Scyther") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        PlayerTwoScore++
+        Counter++
       } else if (CPUChoice == "Scizor") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        PlayerOneScore++
+        Counter++
       } else if (CPUChoice == "Scrafty") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        PlayerTwoScore++
+        Counter++
       } else if (CPUChoice == "Mewtwo") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; TIE GAME`;
       }
@@ -103,48 +138,45 @@ function GameResult() {
       break;
 
     default:
-      Result = "Error";
+      Result = "ERROR: This is not Working";
       break;
   }
+
+  console.log(Result)
 }
 
 Rock.addEventListener("click", function () {
-  let PlayerChoice = "Kleavor";
-  CPUChoice = getCPU();
-  console.log(PlayerChoice);
-  console.log(CPUChoice);
-  GameResult();
-  console.log(Result);
+  PlayerChoice = "Kleavor";
+  getCPU();
+  console.log("Games Played: " + Counter)
+  console.log("Player 1 - " + PlayerOneScore)
+  console.log("Player 2 - " + PlayerTwoScore)
 });
 Paper.addEventListener("click", function () {
-  let PlayerChoice = "Scyther";
-  CPUChoice = getCPU();
-  console.log(PlayerChoice);
-  console.log(CPUChoice);
-  GameResult();
-  console.log(Result);
+  PlayerChoice = "Scyther";
+  getCPU();
+  console.log("Games Played: " + Counter)
+  console.log("Player 1 - " + PlayerOneScore)
+  console.log("Player 2 - " + PlayerTwoScore)
 });
 Scissor.addEventListener("click", function () {
-  let PlayerChoice = "Scizor";
-  CPUChoice = getCPU();
-  console.log(PlayerChoice);
-  console.log(CPUChoice);
-  GameResult();
-  console.log(Result);
+  PlayerChoice = "Scizor";
+  getCPU();
+  console.log("Games Played: " + Counter)
+  console.log("Player 1 - " + PlayerOneScore)
+  console.log("Player 2 - " + PlayerTwoScore)
 });
 Lizard.addEventListener("click", function () {
-  let PlayerChoice = "Scrafty";
-  CPUChoice = getCPU();
-  console.log(PlayerChoice);
-  console.log(CPUChoice);
-  GameResult();
-  console.log(Result);
+  PlayerChoice = "Scrafty";
+  getCPU();
+  console.log("Games Played: " + Counter)
+  console.log("Player 1 - " + PlayerOneScore)
+  console.log("Player 2 - " + PlayerTwoScore)
 });
 Spock.addEventListener("click", function () {
-  let PlayerChoice = "Mewtwo";
-  CPUChoice = getCPU();
-  console.log(PlayerChoice);
-  console.log(CPUChoice);
-  GameResult();
-  console.log(Result);
+  PlayerChoice = "Mewtwo";
+  getCPU();
+  console.log("Games Played: " + Counter)
+  console.log("Player 1 - " + PlayerOneScore)
+  console.log("Player 2 - " + PlayerTwoScore)
 });
