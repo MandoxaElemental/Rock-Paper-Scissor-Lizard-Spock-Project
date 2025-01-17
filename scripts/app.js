@@ -95,7 +95,6 @@ OneVOneBtn.addEventListener("click", function () {
     Round1.className = "slideRight"
     Round2.className = "slideDown"
     Round3.className = "slideLeft"
-    console.log(SetMode)
     OneVsOne.className = "";
     OneVsCPU.className = "";
   });
@@ -106,7 +105,6 @@ OneVCPUBtn.addEventListener("click", function () {
     Round1.className = "slideRight"
     Round2.className = "slideDown"
     Round3.className = "slideLeft"
-    console.log(SetMode)
     OneVsOne.className = "";
     OneVsCPU.className = "";
   });
@@ -114,7 +112,6 @@ RoundsBackBtn.addEventListener("click", function () {
     Rounds.className = "hidden"
     Mode.className = "fadeIn mode"
     SetMode = ""
-    console.log(SetMode)
     OneVsOne.className = "slideRight";
     OneVsCPU.className = "slideLeft";
     Round1.className = ""
@@ -125,21 +122,18 @@ QMBtn.addEventListener("click", function () {
     RoundInt = 1;
     Rounds.className = "hidden"
     Gameplay.className = "fadeIn"
-    console.log(RoundInt)
     PlayerVsComputer()
 });
 BoFiveBtn.addEventListener("click", function () {
     RoundInt = 5;
     Rounds.className = "hidden"
     Gameplay.className = "fadeIn"
-    console.log(RoundInt)
     PlayerVsComputer()
 });
 BoSevenBtn.addEventListener("click", function () {
     RoundInt = 7;
     Rounds.className = "hidden"
     Gameplay.className = "fadeIn"
-    console.log(RoundInt)
     PlayerVsComputer()
 });
 GameplayBackBtn.addEventListener("click", function () {
@@ -218,8 +212,6 @@ function GameOver(){
 }
 
 function GameResult() {
-  console.log(PlayerChoice);
-  console.log(CPUChoice);
   switch (PlayerChoice) {
     case "Kleavor":
       if (CPUChoice == "Kleavor") {
@@ -467,8 +459,6 @@ function GameResult() {
       EndResult.innerText = Result;
       break;
   }
-
-  console.log(Result)
 }
     Rock.addEventListener("click", function () {
         if (SetMode == "Player"){
@@ -485,9 +475,6 @@ function GameResult() {
         } else if (SetMode == "Computer"){        
             PlayerChoice = "Kleavor";
             getCPU();
-            console.log("Games Played: " + Counter)
-            console.log("Player 1 - " + PlayerOneScore)
-            console.log("Player 2 - " + PlayerTwoScore)
             GameOver()
         }
       });
@@ -506,9 +493,6 @@ function GameResult() {
         } else if (SetMode == "Computer"){        
             PlayerChoice = "Scyther";
             getCPU();
-            console.log("Games Played: " + Counter)
-            console.log("Player 1 - " + PlayerOneScore)
-            console.log("Player 2 - " + PlayerTwoScore)
             GameOver()
         }
       });
@@ -527,9 +511,6 @@ function GameResult() {
         } else if (SetMode == "Computer"){        
             PlayerChoice = "Scizor";
             getCPU();
-            console.log("Games Played: " + Counter)
-            console.log("Player 1 - " + PlayerOneScore)
-            console.log("Player 2 - " + PlayerTwoScore)
             GameOver()
         }
       });
@@ -548,9 +529,6 @@ function GameResult() {
         } else if (SetMode == "Computer"){        
             PlayerChoice = "Scrafty";
             getCPU();
-            console.log("Games Played: " + Counter)
-            console.log("Player 1 - " + PlayerOneScore)
-            console.log("Player 2 - " + PlayerTwoScore)
             GameOver()
         }
       });
@@ -569,9 +547,6 @@ function GameResult() {
         } else if (SetMode == "Computer"){        
             PlayerChoice = "Mewtwo";
             getCPU();
-            console.log("Games Played: " + Counter)
-            console.log("Player 1 - " + PlayerOneScore)
-            console.log("Player 2 - " + PlayerTwoScore)
             GameOver()
         }
       });
