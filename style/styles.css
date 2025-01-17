@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+}
+
+button{
+    background-image: url('/assets/pokeball-pokemon-catch.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(255, 255, 255, 0);
+    height: auto;
+    width: 150px;
+    border-radius: 25px;
+    border: none;
+}
+
+.gameIcon{
+    width: 125px;
+    height: 125px;
+}
+.gameIcon:hover{
+    width: 140px;
+    height: 140px;
+}
