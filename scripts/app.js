@@ -48,6 +48,8 @@ let Player2Score = document.getElementById("Player2Score")
 
 let PlayerOrCPU = document.getElementById("PlayerOrCPU")
 
+let PlayerOneTurn = true;
+
 // Pages
 let Homepage = document.getElementById("homepage");
 let MainMenu = document.getElementById("mainMenu");
