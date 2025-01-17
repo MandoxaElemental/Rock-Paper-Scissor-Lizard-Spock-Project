@@ -170,6 +170,7 @@ const getCPU = async () => {
 function PlayerVsComputer(){
     if (SetMode == "Player"){
         document.getElementById('PlayerOrCPU').src="../assets/VSSilver.png";
+        Winner.innerText = "It is Your Turn Player 1"
         VsPlayer()
     } else if (SetMode == "Computer"){
         document.getElementById('PlayerOrCPU').src="../assets/VSThorton.png";
@@ -222,21 +223,41 @@ function GameResult() {
   switch (PlayerChoice) {
     case "Kleavor":
       if (CPUChoice == "Kleavor") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; TIE GAME`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; TIE GAME`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; TIE GAME`;
+        }
       } else if (CPUChoice == "Scyther") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+        }
         PlayerTwoScore++
         Counter++
       } else if (CPUChoice == "Scizor") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+        }
         PlayerOneScore++
         Counter++
       } else if (CPUChoice == "Scrafty") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+        }
         PlayerOneScore++
         Counter++
       } else if (CPUChoice == "Mewtwo") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+        }
         PlayerTwoScore++
         Counter++
       }
@@ -249,21 +270,41 @@ function GameResult() {
 
     case "Scyther":
       if (CPUChoice == "Kleavor") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+        }
         PlayerOneScore++
         Counter++
       } else if (CPUChoice == "Scyther") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; TIE GAME`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; TIE GAME`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; TIE GAME`;
+        }
       } else if (CPUChoice == "Scizor") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+        }
         PlayerTwoScore++
         Counter++
       } else if (CPUChoice == "Scrafty") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+        }
         PlayerTwoScore++
         Counter++
       } else if (CPUChoice == "Mewtwo") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+        }
         PlayerOneScore++
         Counter++
       }
@@ -276,21 +317,41 @@ function GameResult() {
 
     case "Scizor":
       if (CPUChoice == "Kleavor") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+        }
         PlayerTwoScore++
         Counter++
       } else if (CPUChoice == "Scyther") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+        }
         PlayerOneScore++
         Counter++
       } else if (CPUChoice == "Scizor") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; TIE GAME`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; TIE GAME`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; TIE GAME`;
+        }
       } else if (CPUChoice == "Scrafty") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+        }
         PlayerOneScore++
         Counter++
       } else if (CPUChoice == "Mewtwo") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+        }
         PlayerTwoScore++
         Counter++
       }
@@ -303,21 +364,42 @@ function GameResult() {
 
     case "Scrafty":
       if (CPUChoice == "Kleavor") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+        }
         PlayerTwoScore++
         Counter++
       } else if (CPUChoice == "Scyther") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+        }
         PlayerOneScore++
         Counter++
       } else if (CPUChoice == "Scizor") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+        }
         PlayerTwoScore++
         Counter++
       } else if (CPUChoice == "Scrafty") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU TIE`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU TIE`;
+    
+        } else if (SetMode == "Player"){
+            
+        }
       } else if (CPUChoice == "Mewtwo") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+        }
         PlayerOneScore++
         Counter++
       }
@@ -330,23 +412,43 @@ function GameResult() {
 
     case "Mewtwo":
       if (CPUChoice == "Kleavor") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+        }
         PlayerOneScore++
         Counter++
       } else if (CPUChoice == "Scyther") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+        }
         PlayerTwoScore++
         Counter++
       } else if (CPUChoice == "Scizor") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU WIN`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+        }
         PlayerOneScore++
         Counter++
       } else if (CPUChoice == "Scrafty") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; YOU LOSE`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+        }
         PlayerTwoScore++
         Counter++
       } else if (CPUChoice == "Mewtwo") {
-        Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; TIE GAME`;
+        if (SetMode == "Computer"){
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; TIE GAME`;
+        } else if (SetMode == "Player"){
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; TIE GAME`;
+        }
       }
       EndResult.innerText = Result;
       RoundCounter.innerText = "Round:" + Counter;
@@ -356,7 +458,7 @@ function GameResult() {
       break;
 
     case "Inteleon":
-      Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; GUN BEATS EVERYTHING; YOU WIN`;
+      Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; GUN BEATS EVERYTHING; YOU WIN`;
       EndResult.innerText = Result;
       break;
 
@@ -373,9 +475,11 @@ function GameResult() {
             if(PlayerOneTurn === true){
                 PlayerChoice = "Kleavor";
                 PlayerOneTurn = false;
+                Winner.innerText = "It is Your Turn Player 2"
             } else if (PlayerOneTurn == false){
                 CPUChoice = "Kleavor";
                 PlayerOneTurn = true;
+                Winner.innerText = "It is Your Turn Player 1"
                 GameResult()
             }
         } else if (SetMode == "Computer"){        
@@ -392,9 +496,11 @@ function GameResult() {
             if(PlayerOneTurn === true){
                 PlayerChoice = "Scyther";
                 PlayerOneTurn = false;
+                Winner.innerText = "It is Your Turn Player 2"
             } else if (PlayerOneTurn == false){
                 CPUChoice = "Scyther";
                 PlayerOneTurn = true;
+                Winner.innerText = "It is Your Turn Player 1"
                 GameResult()
             }
         } else if (SetMode == "Computer"){        
@@ -411,9 +517,11 @@ function GameResult() {
             if(PlayerOneTurn === true){
                 PlayerChoice = "Scizor";
                 PlayerOneTurn = false;
+                Winner.innerText = "It is Your Turn Player 2"
             } else if (PlayerOneTurn == false){
                 CPUChoice = "Scizor";
                 PlayerOneTurn = true;
+                Winner.innerText = "It is Your Turn Player 1"
                 GameResult()
             }
         } else if (SetMode == "Computer"){        
@@ -430,9 +538,11 @@ function GameResult() {
             if(PlayerOneTurn === true){
                 PlayerChoice = "Scrafty";
                 PlayerOneTurn = false;
+                Winner.innerText = "It is Your Turn Player 2"
             } else if (PlayerOneTurn == false){
                 CPUChoice = "Scrafty";
                 PlayerOneTurn = true;
+                Winner.innerText = "It is Your Turn Player 1"
                 GameResult()
             }
         } else if (SetMode == "Computer"){        
@@ -449,9 +559,11 @@ function GameResult() {
             if(PlayerOneTurn === true){
                 PlayerChoice = "Mewtwo";
                 PlayerOneTurn = false;
+                Winner.innerText = "It is Your Turn Player 2"
             } else if (PlayerOneTurn == false){
                 CPUChoice = "Mewtwo";
                 PlayerOneTurn = true;
+                Winner.innerText = "It is Your Turn Player 1"
                 GameResult()
             }
         } else if (SetMode == "Computer"){        
