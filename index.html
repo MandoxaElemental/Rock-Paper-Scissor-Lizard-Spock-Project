@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPSLS</title>
     <link rel="stylesheet" href="/style/styles.css">
+    <link rel="stylesheet" href="/style/wickedcss.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/pokeball-pokemon-catch.svg">
 </head>
 <body>
-    <button id="rock"><img class="gameIcon" src="./assets/Kleavor.png" alt="kleavor"><p>Rock</p></button>
-    <button id="paper"><img class="gameIcon" src="./assets/Scyther.png" alt="scyther"><p>Paper</p></button>
-    <button id="scissor"><img class="gameIcon" src="./assets/Scizor.png" alt="scizor"><p>Scissor</p></button>
-    <button id="lizard"><img class="gameIcon" src="./assets/Scrafty.png" alt="scrafty"><p>Lizard</p></button>
-    <button id="spock"><img class="gameIcon" src="./assets/Mewtwo.png" alt=""><p>Spock</p></button>
+    <div class="homepage" id="homepage"><h1>ROCK PAPER SCISSOR LIZARD SPOCK</h1>
+    <img src="./assets/International_Pokémon_logo.svg" alt="logo">
+    <h2>Edition</h2>
+    <button id="Start">START</button>
+    <div class="homepageGrid">
+        <img class="homeImg" src="./assets/Mewtwo.png" alt="mewtwo">
+        <img class="homeImg" src="./assets/Scyther.png" alt="scyther">
+        <img class="homeImg" src="./assets/Kleavor.png" alt="kleavor">
+        <img class="homeImg" src="./assets/Scizor.png" alt="scizor">
+        <img class="homeImg" src="./assets/Scrafty.png" alt="scrafty">
+    </div>
+    </div>
+    <div id="gameplay" class="">
+        <button id="rock"><img class="gameIcon" src="./assets/Kleavor.png" alt="kleavor"><p>Rock</p></button>
+        <button id="paper"><img class="gameIcon" src="./assets/Scyther.png" alt="scyther"><p>Paper</p></button>
+        <button id="scissor"><img class="gameIcon" src="./assets/Scizor.png" alt="scizor"><p>Scissor</p></button>
+        <button id="lizard"><img class="gameIcon" src="./assets/Scrafty.png" alt="scrafty"><p>Lizard</p></button>
+        <button id="spock"><img class="gameIcon" src="./assets/Mewtwo.png" alt=""><p>Spock</p></button>
+        <h2 id="result"></h2>
+    </div>
     <script src="./scripts/app.js"></script>
 </body>
 </html>

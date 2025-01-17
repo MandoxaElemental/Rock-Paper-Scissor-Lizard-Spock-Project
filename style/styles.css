@@ -1,8 +1,42 @@
+@font-face {
+    font-family: 'unown';
+    src: URL('/assets/fonts/Unown.ttf') format('truetype');
+  }
+
 body{
     text-align: center;
+    background-image: url('/assets/pokemon_x_and_y_cave_battle_background_1_by_phoenixoflight92_d844jms.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-button{
+.homepage{
+    color: white;
+    background-color: #525F8C;
+    margin: 0;
+    padding: 20px;
+}
+.homepage > h1 {
+    font-family: 'unown';
+    font-size: 50px;
+}
+.homepageGrid{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    background-color: white;
+}
+.homeImg{
+    height: 150px;
+    width: auto;
+    filter: brightness(0%);
+    align-items: center;
+}
+
+#gameplay > button{
     background-image: url('/assets/pokeball-pokemon-catch.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -11,13 +45,28 @@ button{
     width: 150px;
     border-radius: 25px;
     border: none;
+    color: white;
 }
 
 .gameIcon{
     width: 125px;
     height: 125px;
+    filter: brightness(60%)
 }
 .gameIcon:hover{
     width: 140px;
     height: 140px;
+    filter: brightness(100%)
+}
+
+h2{
+    color: white;
+}
+
+img{
+    filter: brightness(100%)
+}
+
+.hidden{
+    display: none
 }

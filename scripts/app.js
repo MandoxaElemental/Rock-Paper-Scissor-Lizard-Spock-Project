@@ -4,11 +4,25 @@ let Paper = document.getElementById("paper");
 let Scissor = document.getElementById("scissor");
 let Lizard = document.getElementById("lizard");
 let Spock = document.getElementById("spock");
+let EndResult = document.getElementById("result")
 let CPUChoice = "";
 let Result = "";
 let Counter = 0
 let PlayerOneScore = 0
 let PlayerTwoScore = 0
+let Start = document.getElementById("start")
+let homeImg = document.getElementsByClassName("homeImg")
+
+// Pages
+let Homepage = document.getElementById("homepage");
+let Gameplay = document.getElementById("gameplay");
+
+homeImg.className = "pulse"
+
+Start.addEventListener("click", function () {
+    Homepage.className = "hidden"
+    Gameplay.className = "fadeIn"
+  });
 
 const getCPU = async () => {
   const response = await fetch(
@@ -43,6 +57,7 @@ function GameResult() {
         PlayerTwoScore++
         Counter++
       }
+      EndResult.innerText = Result;
       break;
 
     case "Scyther":
@@ -65,6 +80,7 @@ function GameResult() {
         PlayerOneScore++
         Counter++
       }
+      EndResult.innerText = Result;
       break;
 
     case "Scizor":
@@ -87,6 +103,7 @@ function GameResult() {
         PlayerTwoScore++
         Counter++
       }
+      EndResult.innerText = Result;
       break;
 
     case "Scrafty":
@@ -109,6 +126,7 @@ function GameResult() {
         PlayerOneScore++
         Counter++
       }
+      EndResult.innerText = Result;
       break;
 
     case "Mewtwo":
@@ -131,14 +149,17 @@ function GameResult() {
       } else if (CPUChoice == "Mewtwo") {
         Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; TIE GAME`;
       }
+      EndResult.innerText = Result;
       break;
 
     case "Inteleon":
       Result = `You have picked ${PlayerChoice}; your Opponent Picked ${CPUChoice}; GUN BEATS EVERYTHING; YOU WIN`;
+      EndResult.innerText = Result;
       break;
 
     default:
       Result = "ERROR: This is not Working";
+      EndResult.innerText = Result;
       break;
   }
 
