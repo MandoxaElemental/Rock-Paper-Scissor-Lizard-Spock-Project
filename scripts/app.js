@@ -238,7 +238,7 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Scizor") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
         }
@@ -246,7 +246,7 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Scrafty") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
         }
@@ -254,7 +254,7 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Mewtwo") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
         }
@@ -271,7 +271,7 @@ function GameResult() {
     case "Scyther":
       if (CPUChoice == "Kleavor") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
         }
@@ -285,7 +285,7 @@ function GameResult() {
         }
       } else if (CPUChoice == "Scizor") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
         }
@@ -293,7 +293,7 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Scrafty") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
         }
@@ -301,7 +301,7 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Mewtwo") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
         }
@@ -318,7 +318,7 @@ function GameResult() {
     case "Scizor":
       if (CPUChoice == "Kleavor") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
         }
@@ -326,7 +326,7 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Scyther") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
         }
@@ -340,7 +340,7 @@ function GameResult() {
         }
       } else if (CPUChoice == "Scrafty") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
         }
@@ -348,7 +348,7 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Mewtwo") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
         }
@@ -365,7 +365,7 @@ function GameResult() {
     case "Scrafty":
       if (CPUChoice == "Kleavor") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
         }
@@ -373,7 +373,7 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Scyther") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
         }
@@ -381,7 +381,7 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Scizor") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
         }
@@ -389,14 +389,14 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Scrafty") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU TIE`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU TIE THIS ROUND`;
     
         } else if (SetMode == "Player"){
             
         }
       } else if (CPUChoice == "Mewtwo") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
         }
@@ -413,7 +413,7 @@ function GameResult() {
     case "Mewtwo":
       if (CPUChoice == "Kleavor") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
         }
@@ -421,7 +421,7 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Scyther") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
         }
@@ -429,7 +429,7 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Scizor") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
         }
@@ -437,7 +437,7 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Scrafty") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE`;
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
         }
