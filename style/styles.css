@@ -158,7 +158,9 @@ body{
 }
 
 .gameplay{
-    padding-top: 20px;
+    padding: 20px 0px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.501);
 }
 .gameplay > button{
     background-image: url('/assets/pokeball-pokemon-catch.svg');

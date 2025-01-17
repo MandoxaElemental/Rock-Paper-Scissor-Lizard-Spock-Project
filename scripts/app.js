@@ -139,8 +139,9 @@ GameplayBackBtn.addEventListener("click", function () {
     PlayerOneScore = 0
     Player2Score.innerText = "Score - 0"
     PlayerTwoScore = 0
+    EndResult.innerText = ""
     Winner.innerText = ""
-
+    EnableFunction()
   });
 
 const getCPU = async () => {
@@ -168,6 +169,23 @@ function WinCon(){
     }
 }
 
+function DisableFunction(){
+    Rock.disabled = true
+    Paper.disabled = true
+    Scissor.disabled = true
+    Lizard.disabled = true
+    Spock.disabled = true
+}
+
+function EnableFunction(){
+    Rock.disabled = false
+    Paper.disabled = false
+    Scissor.disabled = false
+    Lizard.disabled = false
+    Spock.disabled = false
+}
+
+
 function GameOver(){
     if(Counter === RoundInt){
         if(RoundInt == 1){
@@ -177,7 +195,12 @@ function GameOver(){
         } else if (RoundInt == 7){
             WinCon()
         }
+        DisableFunction()
     }
+}
+
+function PlayerVsPlayer(){
+    
 }
 
 function GameResult() {
@@ -208,7 +231,7 @@ function GameResult() {
       RoundCounter.innerText = "Round:" + Counter;
       Player1Score.innerText = "Score - " + PlayerOneScore
       Player2Score.innerText = "Score - " + PlayerTwoScore
-      WinCon()
+      GameOver()
       break;
 
     case "Scyther":
@@ -235,7 +258,7 @@ function GameResult() {
       RoundCounter.innerText = "Round:" + Counter;
       Player1Score.innerText = "Score - " + PlayerOneScore
       Player2Score.innerText = "Score - " + PlayerTwoScore
-      WinCon()
+      GameOver()
       break;
 
     case "Scizor":
@@ -262,7 +285,7 @@ function GameResult() {
       RoundCounter.innerText = "Round:" + Counter;
       Player1Score.innerText = "Score - " + PlayerOneScore
       Player2Score.innerText = "Score - " + PlayerTwoScore
-      WinCon()
+      GameOver()
       break;
 
     case "Scrafty":
@@ -289,7 +312,7 @@ function GameResult() {
       RoundCounter.innerText = "Round:" + Counter;
       Player1Score.innerText = "Score - " + PlayerOneScore
       Player2Score.innerText = "Score - " + PlayerTwoScore
-      WinCon()
+      GameOver()
       break;
 
     case "Mewtwo":
@@ -316,7 +339,7 @@ function GameResult() {
       RoundCounter.innerText = "Round:" + Counter;
       Player1Score.innerText = "Score - " + PlayerOneScore
       Player2Score.innerText = "Score - " + PlayerTwoScore
-      WinCon()
+      GameOver()
       break;
 
     case "Inteleon":
