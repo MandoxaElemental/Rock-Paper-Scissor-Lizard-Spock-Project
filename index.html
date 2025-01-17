@@ -9,19 +9,98 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/pokeball-pokemon-catch.svg">
 </head>
 <body>
+    <!-- Homepage -->
     <div class="homepage" id="homepage"><h1>ROCK PAPER SCISSOR LIZARD SPOCK</h1>
+        <h3>(Rock Paper Scissor Lizard Spock)</h3>
     <img src="./assets/International_Pokémon_logo.svg" alt="logo">
     <h2>Edition</h2>
-    <button id="Start">START</button>
     <div class="homepageGrid">
-        <img class="homeImg" src="./assets/Mewtwo.png" alt="mewtwo">
-        <img class="homeImg" src="./assets/Scyther.png" alt="scyther">
-        <img class="homeImg" src="./assets/Kleavor.png" alt="kleavor">
-        <img class="homeImg" src="./assets/Scizor.png" alt="scizor">
-        <img class="homeImg" src="./assets/Scrafty.png" alt="scrafty">
+        <div>
+            <img class="homeImg" id="homeImg1" src="./assets/Mewtwo.png" alt="mewtwo">
+        </div>
+        <div>
+            <img class="homeImg" id="homeImg2" src="./assets/Scyther.png" alt="scyther">
+        </div>
+        <div>
+            <img class="homeImg" id="homeImg3" src="./assets/Kleavor.png" alt="kleavor">
+        </div>
+        <div>
+            <img class="homeImg" id="homeImg4" src="./assets/Scizor.png" alt="scizor">
+        </div>
+        <div>
+            <img class="homeImg" id="homeImg5" src="./assets/Scrafty.png" alt="scrafty">
+        </div>
     </div>
+    <button id="Start" class="start">START</button>
+</div>
+</div>
+
+<!-- Main Menu -->
+<div class="mainMenu hidden" id="mainMenu">
+    <h1>ROCK PAPER SCISSOR LIZARD SPOCK</h1>
+    <h3>(Rock Paper Scissor Lizard Spock)</h3>
+    <div class="homepageGrid">
+        <div>
+            <img class="homeImg" id="menuImg1" src="./assets/Mewtwo.png" alt="mewtwo">
+        </div>
+        <div>
+            <img class="homeImg" id="menuImg2" src="./assets/Scyther.png" alt="scyther">
+        </div>
+        <div>
+            <img class="homeImg" id="menuImg3" src="./assets/Kleavor.png" alt="kleavor">
+        </div>
+        <div>
+            <img class="homeImg" id="menuImg4" src="./assets/Scizor.png" alt="scizor">
+        </div>
+        <div>
+            <img class="homeImg" id="menuImg5" src="./assets/Scrafty.png" alt="scrafty">
+        </div>
     </div>
-    <div id="gameplay" class="">
+    <div class="menuGrid">
+        <div><button id="newGame" class="start">New Game</button></div>
+        <div><button id="howToPlay" popovertarget="howToPlayPopover" class="start">How to Play</button></div>
+        <div><button id="pokedex" class="start">Pokedex</button></div>
+        <div><button id="extras" class="start">Extras</button></div>
+    </div>
+    <div popover id="howToPlayPopover">
+        <h3>A twist on the classic game:</h3>
+        <h4>ROCK / PAPER / SCISSOR / LIZARD / SPOCK</h4>
+        <p>
+            Kleavor = ROCK
+        </p>
+        <p>
+            Scyther = PAPER
+        </p>
+        <p>
+            Scizor = SCISSOR
+        </p>
+        <p>
+            Scrafty = LIZARD
+        </p>
+        <p>
+            Mewtwo = SPOCK
+        </p>
+            <h3>
+                Kleavor > Scizor & Scrafty
+            </h3>
+            <h3>
+                Scizor > Scrafty & Scyther
+            </h3>
+            <h3>
+                Scrafty > Scyther & Mewtwo
+            </h3>
+            <h3>
+                Scyther > Mewtwo & Kleavor
+            </h3>
+            <h3>
+                Mewtwo > Kleavor & Scizor
+            </h3>
+    </div>
+
+</div>
+
+<!-- Gameplay -->
+    <div id="gameplay" class="hidden">
         <button id="rock"><img class="gameIcon" src="./assets/Kleavor.png" alt="kleavor"><p>Rock</p></button>
         <button id="paper"><img class="gameIcon" src="./assets/Scyther.png" alt="scyther"><p>Paper</p></button>
         <button id="scissor"><img class="gameIcon" src="./assets/Scizor.png" alt="scizor"><p>Scissor</p></button>

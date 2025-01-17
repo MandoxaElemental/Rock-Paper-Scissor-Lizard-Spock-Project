@@ -10,18 +10,44 @@ let Result = "";
 let Counter = 0
 let PlayerOneScore = 0
 let PlayerTwoScore = 0
-let Start = document.getElementById("start")
-let homeImg = document.getElementsByClassName("homeImg")
+let Start = document.getElementById("Start")
+let homeImg1 = document.getElementById("homeImg1")
+let homeImg2 = document.getElementById("homeImg2")
+let homeImg3 = document.getElementById("homeImg3")
+let homeImg4 = document.getElementById("homeImg4")
+let homeImg5 = document.getElementById("homeImg5")
+let menuImg1 = document.getElementById("menuImg1")
+let menuImg2 = document.getElementById("menuImg2")
+let menuImg3 = document.getElementById("menuImg3")
+let menuImg4 = document.getElementById("menuImg4")
+let menuImg5 = document.getElementById("menuImg5")
+let HowToPlay = document.getElementById("howToPlay")
+let NewGame = document.getElementById("newGame")
+let Popover = document.getElementById("howToPlayPopover")
 
 // Pages
 let Homepage = document.getElementById("homepage");
+let MainMenu = document.getElementById("mainMenu");
 let Gameplay = document.getElementById("gameplay");
 
-homeImg.className = "pulse"
+Homepage.className = "fadeIn homepage"
+homeImg1.className = "pulse homeImg"
+homeImg2.className = "pulse homeImg"
+homeImg3.className = "pulse homeImg"
+homeImg4.className = "pulse homeImg"
+homeImg5.className = "pulse homeImg"
+menuImg1.className = "pulse homeImg"
+menuImg2.className = "pulse homeImg"
+menuImg3.className = "pulse homeImg"
+menuImg4.className = "pulse homeImg"
+menuImg5.className = "pulse homeImg"
 
 Start.addEventListener("click", function () {
     Homepage.className = "hidden"
-    Gameplay.className = "fadeIn"
+    MainMenu.className = "slideDown mainMenu"
+  });
+HowToPlay.addEventListener("click", function () {
+    Popover.className = "slideUp"
   });
 
 const getCPU = async () => {

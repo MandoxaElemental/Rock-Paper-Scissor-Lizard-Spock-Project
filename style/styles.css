@@ -12,22 +12,36 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* Homepage */
 .homepage{
     color: white;
     background-color: #525F8C;
-    margin: 0;
-    padding: 20px;
+    margin: 0px;
+    display: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
 }
 .homepage > h1 {
     font-family: 'unown';
     font-size: 50px;
+    margin-bottom: 0;
 }
 .homepageGrid{
-    margin: 20px;
+    margin: 20px 0px;
     display: grid;
+    padding: 0;
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     background-color: white;
+}
+.homeplatGrid > div {
+    display: flex;
+    align-items: center;
 }
 .homeImg{
     height: 150px;
@@ -35,7 +49,48 @@ body{
     filter: brightness(0%);
     align-items: center;
 }
+.start{
+    width: 300px;
+    height: 40px;
+    border: none;
+    font-size: 30px;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.start:hover{
+    background-color: #ffffff7f;
+    font-family: 'unown';
+}
 
+/* Main Menu */
+.mainMenu{
+    color: white;
+    background-color: #525F8C;
+    margin: 0px;
+    display: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+}
+.mainMenu > h1 {
+    font-family: 'unown';
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.menuGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px
+}
+
+#howToPlayPopover{
+    padding: 20px
+}
+/* Gameplay */
 #gameplay > button{
     background-image: url('/assets/pokeball-pokemon-catch.svg');
     background-repeat: no-repeat;
@@ -69,4 +124,10 @@ img{
 
 .hidden{
     display: none
+}
+
+footer{
+    color: white;
+    background-color: #525F8C;
+    font-family: 'unown';
 }
