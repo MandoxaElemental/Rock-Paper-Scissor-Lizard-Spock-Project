@@ -81,32 +81,103 @@
             Mewtwo = SPOCK
         </p>
             <h3>
-                Kleavor > Scizor & Scrafty
+                Kleavor beats Scizor & Scrafty
             </h3>
             <h3>
-                Scizor > Scrafty & Scyther
+                Scizor beats Scrafty & Scyther
             </h3>
             <h3>
-                Scrafty > Scyther & Mewtwo
+                Scrafty beats Scyther & Mewtwo
             </h3>
             <h3>
-                Scyther > Mewtwo & Kleavor
+                Scyther beats Mewtwo & Kleavor
             </h3>
             <h3>
-                Mewtwo > Kleavor & Scizor
+                Mewtwo beats Kleavor & Scizor
             </h3>
     </div>
 
 </div>
 
+<!-- Mode (1v1 / 1vCPU)-->
+<div class="mode hidden" id="mode">
+    <div class="modeGrid">
+        <div id="oneVsOne">
+            <div class="imgGrid">
+                <img src="/assets/EthanChallenge.png" alt="Player 1">
+                <img src="/assets/VSSilver.png" alt="Player 2">
+            </div>
+            <div class="info">
+                <h1>1v1</h1>
+                <p>Battle against a Friend</p>
+                <button id="1v1" class="start">GO</button>
+            </div>
+        </div>
+        <div id="oneVsCPU">
+            <div class="imgGrid">
+                <img src="/assets/EthanChallenge.png" alt="Player 1">
+                <img src="/assets/VSThorton.png" alt="CPU">
+            </div>
+            <div class="info">
+                <h1>VS CPU</h1>
+                <p>Battle against the Computer</p>
+                <button id="1vCPU" class="start">GO</button>
+            </div>
+        </div>
+    </div>
+    <button id="modeBack" class="start">BACK</button>
+</div>
+
+<!-- Round Picker -->
+ <div id="rounds" class="rounds hidden">
+    <div class="roundsGrid">
+        <div>
+            <h3>
+                Quick Match
+            </h3>
+            <button id="QM" class="start">GO</button>
+        </div>
+        <div>
+            <h3>
+                Best out of Five
+            </h3>
+            <button id="BoFive" class="start">GO</button>
+        </div>
+        <div>
+            <h3>
+                Best out of Seven
+            </h3>
+            <button id="BoSeven" class="start">GO</button>
+        </div>
+    </div>
+    <button id="roundsBack" class="start">BACK</button>
+ </div>
+
 <!-- Gameplay -->
     <div id="gameplay" class="hidden">
-        <button id="rock"><img class="gameIcon" src="./assets/Kleavor.png" alt="kleavor"><p>Rock</p></button>
-        <button id="paper"><img class="gameIcon" src="./assets/Scyther.png" alt="scyther"><p>Paper</p></button>
-        <button id="scissor"><img class="gameIcon" src="./assets/Scizor.png" alt="scizor"><p>Scissor</p></button>
-        <button id="lizard"><img class="gameIcon" src="./assets/Scrafty.png" alt="scrafty"><p>Lizard</p></button>
-        <button id="spock"><img class="gameIcon" src="./assets/Mewtwo.png" alt=""><p>Spock</p></button>
-        <h2 id="result"></h2>
+        <div class="score">
+            <div>
+                <img src="/assets/EthanChallenge.png" alt="Player1">
+                Player 1
+                <h2 id="Player1Score">Score - 0</h2>
+            </div>
+            <div><h1 id="RoundCounter">Round:0</h1>
+            <h1 id="winner"></h1></div>
+            <div>
+                Player 2
+                <img id="PlayerOrCPU" src="/assets/VSSilver.png" alt="Player 2">
+                <h2 id="Player2Score">Score - 0</h2>
+            </div>
+        </div>
+        <div class="gameplay">
+            <button id="rock"><img class="gameIcon" src="./assets/Kleavor.png" alt="kleavor"><p>Rock</p></button>
+            <button id="paper"><img class="gameIcon" src="./assets/Scyther.png" alt="scyther"><p>Paper</p></button>
+            <button id="scissor"><img class="gameIcon" src="./assets/Scizor.png" alt="scizor"><p>Scissor</p></button>
+            <button id="lizard"><img class="gameIcon" src="./assets/Scrafty.png" alt="scrafty"><p>Lizard</p></button>
+            <button id="spock"><img class="gameIcon" src="./assets/Mewtwo.png" alt=""><p>Spock</p></button>
+            <h2 id="result"></h2>
+        </div>
+        <button id="gameplayBack" class="start">BACK</button>
     </div>
     <script src="./scripts/app.js"></script>
 </body>

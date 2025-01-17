@@ -88,10 +88,79 @@ body{
 }
 
 #howToPlayPopover{
-    padding: 20px
+    padding: 20px;
+    border-radius: 20px;
 }
+
+/* Mode */
+.mode{
+    background-color: #525F8C;
+    margin: 0px;
+    display: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    justify-content: space-between;
+}
+
+.modeGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 200px;
+    padding: 50px 200px;
+}
+.modeGrid > div {
+    border: solid;
+    border-radius: 20px 20px 0px 0px;
+}
+.info {
+    background-color: white;
+    padding: 20px;
+}
+.imgGrid > img{
+    width: 150px;
+    height: auto;
+    padding-bottom: 0px;
+}
+
+/* Rounds */
+.rounds{
+    background-color: #525F8C;
+    margin: 0px;
+    display: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    justify-content: space-between;
+}
+
+.roundsGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    padding: 50px 100px;
+}
+
 /* Gameplay */
-#gameplay > button{
+.score{
+    display: flex;
+    justify-content:space-between;
+    color: white;
+    background-color: #525F8C;
+}
+
+.gameplay{
+    padding-top: 20px;
+}
+.gameplay > button{
     background-image: url('/assets/pokeball-pokemon-catch.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
