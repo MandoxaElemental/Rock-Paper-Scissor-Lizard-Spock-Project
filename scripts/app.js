@@ -30,6 +30,9 @@ let SetMode = "";
 let OneVsOne = document.getElementById("oneVsOne")
 let OneVsCPU = document.getElementById("oneVsCPU")
 let Winner = document.getElementById("winner")
+let Round1 = document.getElementById("round1")
+let Round2 = document.getElementById("round2")
+let Round3 = document.getElementById("round3")
 
 let OneVOneBtn = document.getElementById("1v1")
 let OneVCPUBtn = document.getElementById("1vCPU")
@@ -87,6 +90,9 @@ OneVOneBtn.addEventListener("click", function () {
     SetMode = "Player"
     Mode.className = "hidden"
     Rounds.className = "fadeIn rounds"
+    Round1.className = "slideRight"
+    Round2.className = "slideDown"
+    Round3.className = "slideLeft"
     console.log(SetMode)
     OneVsOne.className = "";
     OneVsCPU.className = "";
@@ -95,6 +101,9 @@ OneVCPUBtn.addEventListener("click", function () {
     SetMode = "Computer"
     Mode.className = "hidden"
     Rounds.className = "fadeIn rounds"
+    Round1.className = "slideRight"
+    Round2.className = "slideDown"
+    Round3.className = "slideLeft"
     console.log(SetMode)
     OneVsOne.className = "";
     OneVsCPU.className = "";
@@ -106,6 +115,9 @@ RoundsBackBtn.addEventListener("click", function () {
     console.log(SetMode)
     OneVsOne.className = "slideRight";
     OneVsCPU.className = "slideLeft";
+    Round1.className = ""
+    Round2.className = ""
+    Round3.className = ""
 });
 QMBtn.addEventListener("click", function () {
     RoundInt = 1;
@@ -199,8 +211,50 @@ function GameOver(){
     }
 }
 
-function PlayerVsPlayer(){
-    
+function Player2Choice(){
+        Rock.addEventListener("click", function () {
+            CPUChoice = "Kleavor";
+            GameResult()
+          });
+        Paper.addEventListener("click", function () {
+            CPUChoice = "Scyther";
+            GameResult()
+          });
+        Scissor.addEventListener("click", function () {
+            CPUChoice = "Scizor";
+            GameResult()
+          });
+        Lizard.addEventListener("click", function () {
+            CPUChoice = "Scrafty";
+            GameResult()
+          });
+        Spock.addEventListener("click", function () {
+            CPUChoice = "Mewtwo";
+            GameResult()
+          });
+}
+
+function VsPlayer(){
+    Rock.addEventListener("click", function () {
+        PlayerChoice = "Kleavor";
+        Player2Choice();
+      });
+      Paper.addEventListener("click", function () {
+        PlayerChoice = "Scyther";
+        Player2Choice();
+      });
+      Scissor.addEventListener("click", function () {
+        PlayerChoice = "Scizor";
+        Player2Choice();
+      });
+      Lizard.addEventListener("click", function () {
+        PlayerChoice = "Scrafty";
+        Player2Choice();
+      });
+      Spock.addEventListener("click", function () {
+        PlayerChoice = "Mewtwo";
+        Player2Choice();
+      });
 }
 
 function GameResult() {
@@ -356,42 +410,43 @@ function GameResult() {
   console.log(Result)
 }
 
-Rock.addEventListener("click", function () {
-  PlayerChoice = "Kleavor";
-  getCPU();
-  console.log("Games Played: " + Counter)
-  console.log("Player 1 - " + PlayerOneScore)
-  console.log("Player 2 - " + PlayerTwoScore)
-  GameOver()
-});
-Paper.addEventListener("click", function () {
-  PlayerChoice = "Scyther";
-  getCPU();
-  console.log("Games Played: " + Counter)
-  console.log("Player 1 - " + PlayerOneScore)
-  console.log("Player 2 - " + PlayerTwoScore)
-  GameOver()
-});
-Scissor.addEventListener("click", function () {
-  PlayerChoice = "Scizor";
-  getCPU();
-  console.log("Games Played: " + Counter)
-  console.log("Player 1 - " + PlayerOneScore)
-  console.log("Player 2 - " + PlayerTwoScore)
-  GameOver()
-});
-Lizard.addEventListener("click", function () {
-  PlayerChoice = "Scrafty";
-  getCPU();
-  console.log("Games Played: " + Counter)
-  console.log("Player 1 - " + PlayerOneScore)
-  console.log("Player 2 - " + PlayerTwoScore)
-  GameOver()
-});
-Spock.addEventListener("click", function () {
-  PlayerChoice = "Mewtwo";
-  getCPU();
-  console.log("Games Played: " + Counter)
-  console.log("Player 1 - " + PlayerOneScore)
-  console.log("Player 2 - " + PlayerTwoScore)
-});
+    Rock.addEventListener("click", function () {
+        PlayerChoice = "Kleavor";
+        getCPU();
+        console.log("Games Played: " + Counter)
+        console.log("Player 1 - " + PlayerOneScore)
+        console.log("Player 2 - " + PlayerTwoScore)
+        GameOver()
+      });
+      Paper.addEventListener("click", function () {
+        PlayerChoice = "Scyther";
+        getCPU();
+        console.log("Games Played: " + Counter)
+        console.log("Player 1 - " + PlayerOneScore)
+        console.log("Player 2 - " + PlayerTwoScore)
+        GameOver()
+      });
+      Scissor.addEventListener("click", function () {
+        PlayerChoice = "Scizor";
+        getCPU();
+        console.log("Games Played: " + Counter)
+        console.log("Player 1 - " + PlayerOneScore)
+        console.log("Player 2 - " + PlayerTwoScore)
+        GameOver()
+      });
+      Lizard.addEventListener("click", function () {
+        PlayerChoice = "Scrafty";
+        getCPU();
+        console.log("Games Played: " + Counter)
+        console.log("Player 1 - " + PlayerOneScore)
+        console.log("Player 2 - " + PlayerTwoScore)
+        GameOver()
+      });
+      Spock.addEventListener("click", function () {
+        PlayerChoice = "Mewtwo";
+        getCPU();
+        console.log("Games Played: " + Counter)
+        console.log("Player 1 - " + PlayerOneScore)
+        console.log("Player 2 - " + PlayerTwoScore)
+        GameOver()
+      });
