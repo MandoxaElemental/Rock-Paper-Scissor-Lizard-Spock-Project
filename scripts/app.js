@@ -85,6 +85,7 @@ let MewtwoAudio = document.getElementById("mewtwoAudio")
 let InteleonAudio = document.getElementById("inteleonAudio")
 let FluteAudio = document.getElementById("fluteAudio")
 let SelectAudio = document.getElementById("selectAudio")
+let TieAudio = document.getElementById("tieAudio")
 
 KleavorDex.addEventListener("click", function () {
     KleavorInfo.className = "slideUp dex-info"
@@ -294,8 +295,10 @@ function GameResult() {
       if (CPUChoice == "Kleavor") {
         if (SetMode == "Computer"){
             Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; TIE GAME`;
+            TieAudio.play();
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; TIE GAME`;
+            TieAudio.play();
         }
       } else if (CPUChoice == "Scyther") {
         if (SetMode == "Computer"){
@@ -359,8 +362,10 @@ function GameResult() {
       } else if (CPUChoice == "Scyther") {
         if (SetMode == "Computer"){
             Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; TIE GAME`;
+            TieAudio.play();
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; TIE GAME`;
+            TieAudio.play();
         }
       } else if (CPUChoice == "Scizor") {
         if (SetMode == "Computer"){
@@ -424,8 +429,10 @@ function GameResult() {
       } else if (CPUChoice == "Scizor") {
         if (SetMode == "Computer"){
             Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; TIE GAME`;
+            TieAudio.play();
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; TIE GAME`;
+            TieAudio.play();
         }
       } else if (CPUChoice == "Scrafty") {
         if (SetMode == "Computer"){
@@ -489,8 +496,10 @@ function GameResult() {
       } else if (CPUChoice == "Scrafty") {
         if (SetMode == "Computer"){
             Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; TIE GAME`;
+            TieAudio.play();
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; TIE GAME`;
+            TieAudio.play();
         }
       } else if (CPUChoice == "Mewtwo") {
         if (SetMode == "Computer"){
@@ -556,8 +565,10 @@ function GameResult() {
       } else if (CPUChoice == "Mewtwo") {
         if (SetMode == "Computer"){
             Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; TIE GAME`;
+            TieAudio.play();
         } else if (SetMode == "Player"){
             Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; TIE GAME`;
+            TieAudio.play();
         }
       }
       EndResult.innerText = Result;

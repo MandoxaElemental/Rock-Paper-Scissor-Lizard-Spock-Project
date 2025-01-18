@@ -49,6 +49,10 @@ body{
     filter: brightness(0%);
     align-items: center;
 }
+.pokemonLogo{
+    height: 100px;
+    width: auto;
+}
 .start{
     width: 300px;
     height: 40px;
