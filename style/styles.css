@@ -92,6 +92,55 @@ body{
     border-radius: 20px;
 }
 
+/* Pokedex */
+.pokedex{
+    background-color: #525F8C;
+    margin: 0px;
+    display: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    justify-content: space-between;
+    color: white;
+    font-family: 'unown';
+}
+
+.pokedexGrid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
+    margin: 20px;
+}
+
+.dexBtn{
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 20%;
+    background-color: #ffffff00;
+    background-image: url(/assets/pokeball-pokemon-catch.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.dexIcon{
+    width: 125px;
+    height: 125px;
+    filter: brightness(60%)
+}
+
+.dexIcon:hover{
+    width: 140px;
+    height: 140px;
+    filter: brightness(100%)
+}
+
+
+
 /* Mode */
 .mode{
     background-color: #525F8C;
@@ -207,4 +256,16 @@ img{
 
 .hidden{
     display: none
+}
+
+.white{
+    color: white
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
 }

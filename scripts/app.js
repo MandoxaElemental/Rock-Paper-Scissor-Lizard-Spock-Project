@@ -47,8 +47,10 @@ let Player1Score = document.getElementById("Player1Score")
 let Player2Score = document.getElementById("Player2Score")
 
 let PlayerOrCPU = document.getElementById("PlayerOrCPU")
-
 let PlayerOneTurn = true;
+
+let PokedexBtn = document.getElementById("pokedexBtn")
+let PokedexBackBtn = document.getElementById("pokedexBack")
 
 // Pages
 let Homepage = document.getElementById("homepage");
@@ -56,6 +58,7 @@ let MainMenu = document.getElementById("mainMenu");
 let Gameplay = document.getElementById("gameplay");
 let Mode = document.getElementById("mode")
 let Rounds = document.getElementById("rounds")
+let Pokedex = document.getElementById("pokedex")
 
 Homepage.className = "fadeIn homepage"
 homeImg1.className = "pulse homeImg"
@@ -79,6 +82,16 @@ NewGame.addEventListener("click", function () {
     OneVsOne.className = "slideRight";
     OneVsCPU.className = "slideLeft";
   });
+
+PokedexBtn.addEventListener("click", function () {
+    MainMenu.className = "hidden";
+    Pokedex.className = "pokedex fadeIn";
+  });
+PokedexBackBtn.addEventListener("click", function () {
+    Pokedex.className = "hidden"
+    MainMenu.className = "fadeIn mainMenu"
+  });
+
 HowToPlay.addEventListener("click", function () {
     Popover.className = "slideUp"
   });
@@ -149,6 +162,7 @@ GameplayBackBtn.addEventListener("click", function () {
     PlayerTwoScore = 0
     EndResult.innerText = ""
     Winner.innerText = ""
+    Winner.className = "white"
     EnableFunction()
   });
 
@@ -165,6 +179,7 @@ function PlayerVsComputer(){
     if (SetMode == "Player"){
         document.getElementById('PlayerOrCPU').src="../assets/VSSilver.png";
         Winner.innerText = "It is Your Turn Player 1"
+        Winner.className = "red"
         VsPlayer()
     } else if (SetMode == "Computer"){
         document.getElementById('PlayerOrCPU').src="../assets/VSThorton.png";
@@ -179,6 +194,7 @@ function WinCon(){
     } else{
         Winner.innerText = "Player 2 Wins"
     }
+    Winner.className = "white pulse"
 }
 
 function DisableFunction(){
@@ -465,10 +481,12 @@ function GameResult() {
                 PlayerChoice = "Kleavor";
                 PlayerOneTurn = false;
                 Winner.innerText = "It is Your Turn Player 2"
+                Winner.className = "blue"
             } else if (PlayerOneTurn == false){
                 CPUChoice = "Kleavor";
                 PlayerOneTurn = true;
                 Winner.innerText = "It is Your Turn Player 1"
+                Winner.className = "red"
                 GameResult()
             }
         } else if (SetMode == "Computer"){        
@@ -483,10 +501,12 @@ function GameResult() {
                 PlayerChoice = "Scyther";
                 PlayerOneTurn = false;
                 Winner.innerText = "It is Your Turn Player 2"
+                Winner.className = "blue"
             } else if (PlayerOneTurn == false){
                 CPUChoice = "Scyther";
                 PlayerOneTurn = true;
                 Winner.innerText = "It is Your Turn Player 1"
+                Winner.className = "red"
                 GameResult()
             }
         } else if (SetMode == "Computer"){        
@@ -501,10 +521,12 @@ function GameResult() {
                 PlayerChoice = "Scizor";
                 PlayerOneTurn = false;
                 Winner.innerText = "It is Your Turn Player 2"
+                Winner.className = "blue"
             } else if (PlayerOneTurn == false){
                 CPUChoice = "Scizor";
                 PlayerOneTurn = true;
                 Winner.innerText = "It is Your Turn Player 1"
+                Winner.className = "red"
                 GameResult()
             }
         } else if (SetMode == "Computer"){        
@@ -519,10 +541,12 @@ function GameResult() {
                 PlayerChoice = "Scrafty";
                 PlayerOneTurn = false;
                 Winner.innerText = "It is Your Turn Player 2"
+                Winner.className = "blue"
             } else if (PlayerOneTurn == false){
                 CPUChoice = "Scrafty";
                 PlayerOneTurn = true;
                 Winner.innerText = "It is Your Turn Player 1"
+                Winner.className = "red"
                 GameResult()
             }
         } else if (SetMode == "Computer"){        
@@ -537,10 +561,12 @@ function GameResult() {
                 PlayerChoice = "Mewtwo";
                 PlayerOneTurn = false;
                 Winner.innerText = "It is Your Turn Player 2"
+                Winner.className = "blue"
             } else if (PlayerOneTurn == false){
                 CPUChoice = "Mewtwo";
                 PlayerOneTurn = true;
                 Winner.innerText = "It is Your Turn Player 1"
+                Winner.className = "red"
                 GameResult()
             }
         } else if (SetMode == "Computer"){        
