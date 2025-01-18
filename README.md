@@ -44,5 +44,5 @@ Be Creative and Have Fun!
 ### _Vercel Link:_
 [Vercel Link](https://weather-sprint-trade.vercel.app/)
 
-This has been Peer Reviewed By: 
-> Comments: 
+This has been Peer Reviewed By: Juan Heredia
+> Comments: Really nice design! PVE and PVP works just fine, my only real criticism is that pokedex and extras don't really seem to do anything
