@@ -60,6 +60,42 @@ let Mode = document.getElementById("mode")
 let Rounds = document.getElementById("rounds")
 let Pokedex = document.getElementById("pokedex")
 
+
+
+// Pokedex
+let KleavorDex = document.getElementById("KleavorDex")
+let ScytherDex = document.getElementById("ScytherDex")
+let ScizorDex = document.getElementById("ScizorDex")
+let ScraftyDex = document.getElementById("ScraftyDex")
+let MewtwoDex = document.getElementById("MewtwoDex")
+let InteleonDex = document.getElementById("InteleonDex")
+let KleavorInfo = document.getElementById("KleavorInfo")
+let ScytherInfo = document.getElementById("ScytherInfo")
+let ScizorInfo = document.getElementById("ScizorInfo")
+let ScraftyInfo = document.getElementById("ScraftyInfo")
+let MewtwoInfo = document.getElementById("MewtwoInfo")
+let InteleonInfo = document.getElementById("InteleonInfo")
+
+KleavorDex.addEventListener("click", function () {
+    KleavorInfo.className = "slideUp dex-info"
+  });
+ScytherDex.addEventListener("click", function () {
+    ScytherInfo.className = "slideUp dex-info"
+  });
+ScizorDex.addEventListener("click", function () {
+    ScizorInfo.className = "slideUp dex-info"
+  });
+ScraftyDex.addEventListener("click", function () {
+    ScraftyInfo.className = "slideUp dex-info"
+  });
+MewtwoDex.addEventListener("click", function () {
+    MewtwoInfo.className = "slideUp dex-info"
+  });
+InteleonDex.addEventListener("click", function () {
+    InteleonInfo.className = "slideUp dex-info"
+  });
+
+
 Homepage.className = "fadeIn homepage"
 homeImg1.className = "pulse homeImg"
 homeImg2.className = "pulse homeImg"

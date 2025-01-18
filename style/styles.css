@@ -106,7 +106,6 @@ body{
     width:100%;
     justify-content: space-between;
     color: white;
-    font-family: 'unown';
 }
 
 .pokedexGrid{
@@ -139,6 +138,10 @@ body{
     filter: brightness(100%)
 }
 
+.dex-info{
+    border-radius: 20px;
+    padding: 10px;
+}
 
 
 /* Mode */
