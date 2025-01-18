@@ -381,10 +381,9 @@ function GameResult() {
         Counter++
       } else if (CPUChoice == "Scrafty") {
         if (SetMode == "Computer"){
-            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU TIE THIS ROUND`;
-    
+            Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; TIE GAME`;
         } else if (SetMode == "Player"){
-            
+            Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; TIE GAME`;
         }
       } else if (CPUChoice == "Mewtwo") {
         if (SetMode == "Computer"){

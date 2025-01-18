@@ -42,7 +42,9 @@ Be Creative and Have Fun!
 ### _GitHub Repository Link:_
 [Rock Paper Scissor Lizard Spock GitHub Repository Link](https://github.com/MandoxaElemental/Rock-Paper-Scissor-Lizard-Spock-Project)
 ### _Vercel Link:_
-[Vercel Link](https://weather-sprint-trade.vercel.app/)
+[Vercel Link](https://rock-paper-scissor-lizard-spock-project.vercel.app/)
+### _Azure Link:_
+[Azure Link](https://greinaresrpsls-f0gkb5h3ftcbe2e3.westus-01.azurewebsites.net/gameplay/RPSLS)
 
 This has been Peer Reviewed By: Juan Heredia
 > Comments: Really nice design! PVE and PVP works just fine, my only real criticism is that pokedex and extras don't really seem to do anything
