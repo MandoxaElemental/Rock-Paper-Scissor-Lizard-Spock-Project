@@ -704,20 +704,22 @@ let Player2Counter = 2;
     Player1Forward.addEventListener("click", function (){
         if(Player1Counter < 41){
             Player1Counter++
+            PlayerIconOptions()
         }
         else{
             Player1Counter = 1
+            PlayerIconOptions()
         }
-        PlayerIconOptions()
     });
     Player1Back.addEventListener("click", function() {
         if(Player1Counter > 1){
             Player1Counter--
+        PlayerIconOptions()
         }
         else{
             Player1Counter = 40
-        }
         PlayerIconOptions()
+        }
     });
     Player2Forward.addEventListener("click", function() {
         if(Player2Counter < 41){
@@ -741,127 +743,250 @@ let Player2Counter = 2;
     function PlayerIconOptions(){
         switch (Player1Counter){
             case 1:
-                document.getElementById("extraPlayer1Icon").src="../assets/EthanChallenge";
+                document.getElementById("extraPlayer1Icon").src="../assets/EthanChallenge.png";
+                document.getElementById("player1Icon").src="../assets/EthanChallenge.png";
+                document.getElementById("player1IconVsCPU").src="../assets/EthanChallenge.png";
+                document.getElementById("gameplayIcon").src="../assets/EthanChallenge.png";
             break;
             case 2:
-                document.getElementById("extraPlayer1Icon").src="../assets/VsSilver";
+                document.getElementById("extraPlayer1Icon").src="../assets/VsSilver.png";
+                document.getElementById("player1Icon").src="../assets/VsSilver.png";
+                document.getElementById("player1IconVsCPU").src="../assets/VsSilver.png";
+                document.getElementById("gameplayIcon").src="../assets/VsSilver.png";
             break;
             case 3:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsLyra.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsLyra.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsLyra.png";
             break;
             case 4:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsFalkner.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsFalkner.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsFalkner.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsFalkner.png";
             break;
             case 5:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsBugsy.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsBugsy.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsBugsy.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsBugsy.png";
             break;
             case 6:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsWhitney.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsWhitney.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsWhitney.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsWhitney.png";
             break;
             case 7:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsMorty.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsMorty.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsMorty.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsMorty.png";
             break;
             case 8:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsChuck.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsChuck.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsChuck.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsChuck.png";
             break;
             case 9:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsJasmine.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsJasmine.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsJasmine.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsJasmine.png";
             break;
             case 10:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsPryce.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsPryce.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsPryce.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsPryce.png";
             break;
             case 11:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsClair.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsClair.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsClair.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsClair.png";
             break;
             case 12:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsWill.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsWill.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsWill.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsWill.png";
             break;
             case 13:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsBruno.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsBruno.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsBruno.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsBruno.png";
             break;
             case 14:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsKoga.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsKoga.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsKoga.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsKoga.png";
             break;
             case 15:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsKaren.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsKaren.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsKaren.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsKaren.png";
             break;
             case 16:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLance.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsLance.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsLance.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsLance.png";
             break;
             case 17:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsBrock.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsBrock.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsBrock.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsBrock.png";
             break;
             case 18:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsMisty.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsMisty.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsMisty.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsMisty.png";
             break;
             case 19:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLt_Surge.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsLt_Surge.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsLt_Surge.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsLt_Surge.png";
             break;
             case 20:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsErika.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsErika.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsErika.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsErika.png";
             break;
             case 21:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsJanine.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsJanine.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsJanine.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsJanine.png";
             break;
             case 22:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsSabrina.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsSabrina.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsSabrina.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsSabrina.png";
             break;
             case 23:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsBlaine.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsBlaine.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsBlaine.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsBlaine.png";
             break;
             case 24:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsBlue.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsBlue.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsBlue.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsBlue.png";
             break;
             case 25:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsGiovanni.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsGiovanni.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsGiovanni.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsGiovanni.png";
             break;
             case 26:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLucas.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsLucas.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsLucas.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsLucas.png";
             break;
             case 27:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsDawn.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsDawn.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsDawn.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsDawn.png";
             break;
             case 28:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsRoark.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsRoark.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsRoark.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsRoark.png";
             break;
             case 29:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsGardenia.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsGardenia.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsGardenia.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsGardenia.png";
             break;
             case 30:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
-            case 31:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsFantina.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsFantina.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsFantina.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsFantina.png";
             break;
+            case 31:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsMaylene.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsMaylene.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsMaylene.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsMaylene.png";
             case 32:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsCrasher_Wake.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsCrasher_Wake.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsCrasher_Wake.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsCrasher_Wake.png";
             break;
             case 33:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsByron.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsByron.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsByron.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsByron.png";
             break;
             case 34:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsCandice.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsCandice.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsCandice.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsCandice.png";
             break;
             case 35:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsVolkner.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsVolkner.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsVolkner.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsVolkner.png";
             break;
             case 36:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsAaron.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsAaron.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsAaron.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsAaron.png";
             break;
             case 37:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsBertha.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsBertha.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsBertha.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsBertha.png";
             break;
             case 38:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsFlint.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsFlint.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsFlint.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsFlint.png";
             break;
             case 39:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLucian.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsLucian.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsLucian.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsLucian.png";
             break;
             case 40:
-                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsCynthia.png";
+                document.getElementById("player1Icon").src="../assets/Characters/VsCynthia.png";
+                document.getElementById("player1IconVsCPU").src="../assets/Characters/VsCynthia.png";
+                document.getElementById("gameplayIcon").src="../assets/Characters/VsCynthia.png";
             break;
 
             default:
-                document.getElementById("extraPlayer1Icon").src="../assets/EthanChallenge";
+                document.getElementById("extraPlayer1Icon").src="../assets/EthanChallenge.png";
+                document.getElementById("player1Icon").src="../assets/EthanChallenge.png";
+                document.getElementById("player1IconVsCPU").src="../assets/EthanChallenge.png";
+                document.getElementById("gameplayIcon").src="../assets/EthanChallenge.png";
             break;
         }
     }
