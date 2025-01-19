@@ -1,7 +1,7 @@
 # Rock Paper Scissor Lizard Spock
 
 ### Gianpaolo Reinares
-### 12/12/2024
+### 1/18/2024
 # "Project - Rock Paper Scissor Lizard Spock"
 ### Description: 
 
@@ -37,7 +37,7 @@
     * Peer review
 
 Be Creative and Have Fun!
-> Notes: 
+> Notes: Followed the comments in the peer review and added the Pokedex and Extra Features;
 
 ### _GitHub Repository Link:_
 [Rock Paper Scissor Lizard Spock GitHub Repository Link](https://github.com/MandoxaElemental/Rock-Paper-Scissor-Lizard-Spock-Project)

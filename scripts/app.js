@@ -524,9 +524,9 @@ function GameResult() {
           Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
           ScraftyAudio.play();
         }
-      } else if (CPUChoice == "Inteleon") {
         PlayerOneScore++;
         Counter++;
+      } else if (CPUChoice == "Inteleon") {
         Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; GUN BEATS EVERYTHING;  PLAYER 2 WINS THIS ROUND`;
         InteleonAudio.play();
         PlayerTwoScore++;
