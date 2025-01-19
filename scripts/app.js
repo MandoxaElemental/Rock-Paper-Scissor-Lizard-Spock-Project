@@ -302,46 +302,46 @@ function GameResult() {
         }
       } else if (CPUChoice == "Scyther") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; SCYTHER BEATS KLEAVOR; YOU LOSE THIS ROUND`;
           ScytherAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; SCYTHER BEATS KLEAVOR PLAYER 2 WINS THIS ROUND`;
           ScytherAudio.play();
         }
         PlayerTwoScore++;
         Counter++;
       } else if (CPUChoice == "Scizor") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; KLEAVOR BEATS SCIZOR; YOU WIN THIS ROUND`;
           KleavorAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; KLEAVOR BEATS SCIZOR; PLAYER 1 WINS THIS ROUND`;
           KleavorAudio.play();
         }
         PlayerOneScore++;
         Counter++;
       } else if (CPUChoice == "Scrafty") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; KLEAVOR BEATS SCRAFTY; YOU WIN THIS ROUND`;
           KleavorAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; KLEAVOR BEATS SCRAFTY; PLAYER 1 WINS THIS ROUND`;
           KleavorAudio.play();
         }
         PlayerOneScore++;
         Counter++;
       } else if (CPUChoice == "Mewtwo") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; MEWTWO BEATS KLEAVOR; YOU LOSE THIS ROUND`;
           MewtwoAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; MEWTWO BEATS KLEAVOR; PLAYER 2 WINS THIS ROUND`;
           MewtwoAudio.play();
         }
         PlayerTwoScore++;
         Counter++;
       } else if (CPUChoice == "Inteleon") {
-        Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; GUN BEATS EVERYTHING;  PLAYER 2 WINS THIS ROUND`;
+        Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; GUN BEATS EVERYTHING; PLAYER 2 WINS THIS ROUND`;
         InteleonAudio.play();
         PlayerTwoScore++;
         Counter++;
@@ -356,10 +356,10 @@ function GameResult() {
     case "Scyther":
       if (CPUChoice == "Kleavor") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; KLEAVOR BEATS SCYTHER; YOU WIN THIS ROUND`;
           ScytherAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; KLEAVOR BEATS SCYTHER; PLAYER 1 WINS THIS ROUND`;
           ScytherAudio.play();
         }
         PlayerOneScore++;
@@ -374,36 +374,36 @@ function GameResult() {
         }
       } else if (CPUChoice == "Scizor") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; SCIZOR BEATS SCYTHER; YOU LOSE THIS ROUND`;
           ScizorAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; SCIZOR BEATS SCYTHER; PLAYER 2 WINS THIS ROUND`;
           ScizorAudio.play();
         }
         PlayerTwoScore++;
         Counter++;
       } else if (CPUChoice == "Scrafty") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; SCRAFTY BEATS SCYTHER; YOU LOSE THIS ROUND`;
           ScraftyAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; SCRAFTY BEATS SCYTHER; PLAYER 2 WINS THIS ROUND`;
           ScraftyAudio.play();
         }
         PlayerTwoScore++;
         Counter++;
       } else if (CPUChoice == "Mewtwo") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; SCYTHER BEATS MEWTWO; YOU WIN THIS ROUND`;
           ScytherAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; SCYTHER BEATS MEWTWO; PLAYER 1 WINS THIS ROUND`;
           ScytherAudio.play();
         }
         PlayerOneScore++;
         Counter++;
       } else if (CPUChoice == "Inteleon") {
-        Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; GUN BEATS EVERYTHING;  PLAYER 2 WINS THIS ROUND`;
+        Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; GUN BEATS EVERYTHING; PLAYER 2 WINS THIS ROUND`;
         InteleonAudio.play();
         PlayerTwoScore++;
         Counter++;
@@ -418,20 +418,20 @@ function GameResult() {
     case "Scizor":
       if (CPUChoice == "Kleavor") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; KLEAVOR BEATS SCIZOR; YOU LOSE THIS ROUND`;
           KleavorAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; KLEAVOR BEATS SCIZOR; PLAYER 2 WINS THIS ROUND`;
           KleavorAudio.play();
         }
         PlayerTwoScore++;
         Counter++;
       } else if (CPUChoice == "Scyther") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; SCIZOR BEATS SCYTHER; YOU WIN THIS ROUND`;
           ScizorAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; SCIZOR BEATS SCYTHER; PLAYER 1 WINS THIS ROUND`;
           ScizorAudio.play();
         }
         PlayerOneScore++;
@@ -446,26 +446,26 @@ function GameResult() {
         }
       } else if (CPUChoice == "Scrafty") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; SCIZOR BEATS SCRAFTY; YOU WIN THIS ROUND`;
           ScizorAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; SCIZOR BEATS SCRAFTY; PLAYER 1 WINS THIS ROUND`;
           ScizorAudio.play();
         }
         PlayerOneScore++;
         Counter++;
       } else if (CPUChoice == "Mewtwo") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; MEWTWO BEATS SCIZOR; YOU LOSE THIS ROUND`;
           MewtwoAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; MEWTWO BEATS SCIZOR; PLAYER 2 WINS THIS ROUND`;
           MewtwoAudio.play();
         }
         PlayerTwoScore++;
         Counter++;
       } else if (CPUChoice == "Inteleon") {
-        Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; GUN BEATS EVERYTHING;  PLAYER 2 WINS THIS ROUND`;
+        Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; GUN BEATS EVERYTHING; PLAYER 2 WINS THIS ROUND`;
         InteleonAudio.play();
         PlayerTwoScore++;
         Counter++;
@@ -480,30 +480,30 @@ function GameResult() {
     case "Scrafty":
       if (CPUChoice == "Kleavor") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; KLEAVOR BEATS SCRAFTY; YOU LOSE THIS ROUND`;
           KleavorAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; KLEAVOR BEATS SCRAFTY; PLAYER 2 WINS THIS ROUND`;
           KleavorAudio.play();
         }
         PlayerTwoScore++;
         Counter++;
       } else if (CPUChoice == "Scyther") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; SCRAFTY BEATS SCYTHER; YOU WIN THIS ROUND`;
           ScraftyAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; SCRAFTY BEATS SCYTHER; PLAYER 1 WINS THIS ROUND`;
           ScraftyAudio.play();
         }
         PlayerOneScore++;
         Counter++;
       } else if (CPUChoice == "Scizor") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; SCIZOR BEATS SCRAFTY; YOU LOSE THIS ROUND`;
           ScizorAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; SCIZOR BEATS SCRAFTY; PLAYER 2 WINS THIS ROUND`;
           ScizorAudio.play();
         }
         PlayerTwoScore++;
@@ -518,16 +518,16 @@ function GameResult() {
         }
       } else if (CPUChoice == "Mewtwo") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; SCRAFTY BEATS MEWTWO; YOU WIN THIS ROUND`;
           ScraftyAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; SCRAFTY BEATS MEWTWO; PLAYER 1 WINS THIS ROUND`;
           ScraftyAudio.play();
         }
         PlayerOneScore++;
         Counter++;
       } else if (CPUChoice == "Inteleon") {
-        Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; GUN BEATS EVERYTHING;  PLAYER 2 WINS THIS ROUND`;
+        Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; GUN BEATS EVERYTHING; PLAYER 2 WINS THIS ROUND`;
         InteleonAudio.play();
         PlayerTwoScore++;
         Counter++;
@@ -542,40 +542,40 @@ function GameResult() {
     case "Mewtwo":
       if (CPUChoice == "Kleavor") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; MEWTWO BEATS KLEAVOR; YOU WIN THIS ROUND`;
           MewtwoAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; MEWTWO BEATS KLEAVOR; PLAYER 1 WINS THIS ROUND`;
           MewtwoAudio.play();
         }
         PlayerOneScore++;
         Counter++;
       } else if (CPUChoice == "Scyther") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; SCYTHER BEATS MEWTWO; YOU LOSE THIS ROUND`;
           ScytherAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; SCYTHER BEATS MEWTWO; PLAYER 2 WINS THIS ROUND`;
           ScytherAudio.play();
         }
         PlayerTwoScore++;
         Counter++;
       } else if (CPUChoice == "Scizor") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU WIN THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; MEWTWO BEATS SCIZOR; YOU WIN THIS ROUND`;
           MewtwoAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 1 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; MEWTWO BEATS SCIZOR; PLAYER 1 WINS THIS ROUND`;
           MewtwoAudio.play();
         }
         PlayerOneScore++;
         Counter++;
       } else if (CPUChoice == "Scrafty") {
         if (SetMode == "Computer") {
-          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; YOU LOSE THIS ROUND`;
+          Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; SCRAFTY BEATS MEWTWO; YOU LOSE THIS ROUND`;
           ScraftyAudio.play();
         } else if (SetMode == "Player") {
-          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; PLAYER 2 WINS THIS ROUND`;
+          Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; SCRAFTY BEATS MEWTWO; PLAYER 2 WINS THIS ROUND`;
           ScraftyAudio.play();
         }
         PlayerTwoScore++;
@@ -591,7 +591,7 @@ function GameResult() {
           Counter++
         }
     } else if (CPUChoice == "Inteleon") {
-      Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; GUN BEATS EVERYTHING;  PLAYER 2 WINS THIS ROUND`;
+      Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; GUN BEATS EVERYTHING; PLAYER 2 WINS THIS ROUND`;
       InteleonAudio.play();
       PlayerTwoScore++;
       Counter++;
