@@ -61,7 +61,6 @@ let Rounds = document.getElementById("rounds")
 let Pokedex = document.getElementById("pokedex")
 
 
-
 // Pokedex
 let KleavorDex = document.getElementById("KleavorDex")
 let ScytherDex = document.getElementById("ScytherDex")
@@ -689,3 +688,180 @@ function GameResult() {
             GameOver()
         }
       });
+
+// Extras
+let Player1IconExtra = document.getElementById("extraPlayer1Icon")
+let Player2IconExtra = document.getElementById("extraPlayer2Icon")
+let Player1Forward = document.getElementById("player1Forward");
+let Player1Back = document.getElementById("player1Back");
+let Player2Forward = document.getElementById("player2Forward");
+let Player2Back = document.getElementById("player2Back");
+let Player1Counter = 1;
+let Player2Counter = 2;
+
+
+
+    Player1Forward.addEventListener("click", function (){
+        if(Player1Counter < 41){
+            Player1Counter++
+        }
+        else{
+            Player1Counter = 1
+        }
+        PlayerIconOptions()
+    });
+    Player1Back.addEventListener("click", function() {
+        if(Player1Counter > 1){
+            Player1Counter--
+        }
+        else{
+            Player1Counter = 40
+        }
+        PlayerIconOptions()
+    });
+    Player2Forward.addEventListener("click", function() {
+        if(Player2Counter < 41){
+            Player2Counter++
+        }
+        else{
+            Player2Counter = 1
+        }
+        
+    });
+    Player2Back.addEventListener("click", function() {
+        if(Player2Counter > 1){
+            Player2Counter--
+        }
+        else{
+            Player2Counter = 40
+        }
+        
+    });
+
+    function PlayerIconOptions(){
+        switch (Player1Counter){
+            case 1:
+                document.getElementById("extraPlayer1Icon").src="../assets/EthanChallenge";
+            break;
+            case 2:
+                document.getElementById("extraPlayer1Icon").src="../assets/VsSilver";
+            break;
+            case 3:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 4:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 5:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 6:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 7:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 8:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 9:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 10:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 11:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 12:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 13:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 14:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 15:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 16:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 17:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 18:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 19:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 20:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 21:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 22:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 23:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 24:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 25:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 26:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 27:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 28:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 29:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 30:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            case 31:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 32:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 33:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 34:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 35:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 36:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 37:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 38:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 39:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+            case 40:
+                document.getElementById("extraPlayer1Icon").src="../assets/Characters/VsLyra";
+            break;
+
+            default:
+                document.getElementById("extraPlayer1Icon").src="../assets/EthanChallenge";
+            break;
+        }
+    }

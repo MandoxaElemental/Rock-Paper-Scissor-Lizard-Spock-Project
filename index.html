@@ -60,7 +60,7 @@
         <div><button id="newGame" class="start">New Game</button></div>
         <div><button id="howToPlay" popovertarget="howToPlayPopover" class="start">How to Play</button></div>
         <div><button id="pokedexBtn" class="start">Pokedex</button></div>
-        <div><button id="extrasBtn" class="start">Extras</button></div>
+        <div><button id="extrasBtn" popovertarget="extrasPopover" class="start">Extras</button></div>
     </div>
     <div popover id="howToPlayPopover">
         <h3>A twist on the classic game:</h3>
@@ -98,6 +98,22 @@
     </div>
 
 </div>
+
+<!-- Extras / Settings -->
+ <div popover id="extrasPopover" class="extras">
+    <div class="extrasGrid">
+        <div class="player1grid">
+            <h2>Player 1 Icon</h2>
+            <img id="extraPlayer1Icon" src="/assets/EthanChallenge.png" alt="player1">
+            <div><button id="player1Back"><</button> <button id="player1Forward">></button></div>
+        </div>
+        <div class="player1grid">
+            <h2>Player 2 Icon</h2>
+            <img id="extraPlayer2Icon" src="/assets/VSSilver.png" alt="player1">
+            <div><button id="player2Back"><</button> <button id="player2Forward">></button></div>
+        </div>
+    </div>
+ </div>
 
 <!-- Pokedex -->
  <div id="pokedex" class="pokedex hidden">
@@ -242,8 +258,8 @@
     <div class="modeGrid">
         <div id="oneVsOne">
             <div class="imgGrid">
-                <img src="/assets/EthanChallenge.png" alt="Player 1">
-                <img src="/assets/VSSilver.png" alt="Player 2">
+                <img id="player1Icon" src="/assets/EthanChallenge.png" alt="Player 1">
+                <img id="player2Icon" src="/assets/VSSilver.png" alt="Player 2">
             </div>
             <div class="info">
                 <h1>1v1</h1>
@@ -253,7 +269,7 @@
         </div>
         <div id="oneVsCPU">
             <div class="imgGrid">
-                <img src="/assets/EthanChallenge.png" alt="Player 1">
+                <img id="player1IconVsCPU" src="/assets/EthanChallenge.png" alt="Player 1">
                 <img src="/assets/VSThorton.png" alt="CPU">
             </div>
             <div class="info">

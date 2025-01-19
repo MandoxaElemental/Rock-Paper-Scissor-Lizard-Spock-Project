@@ -3,6 +3,31 @@
     src: URL('/assets/fonts/Unown.ttf') format('truetype');
   }
 
+h2{
+    color: white;
+}
+
+img{
+    filter: brightness(100%)
+}
+
+.hidden{
+    display: none
+}
+
+.white{
+    color: white
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
+
+
 body{
     text-align: center;
     background-image: url('/assets/pokemon_x_and_y_cave_battle_background_1_by_phoenixoflight92_d844jms.png');
@@ -147,6 +172,22 @@ body{
     padding: 10px;
 }
 
+/* Extras */
+.extras{
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+
+.extrasGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.extrasGrid > div > h2 {
+    color: black;
+}
 
 /* Mode */
 .mode{
@@ -251,28 +292,4 @@ body{
     width: 140px;
     height: 140px;
     filter: brightness(100%)
-}
-
-h2{
-    color: white;
-}
-
-img{
-    filter: brightness(100%)
-}
-
-.hidden{
-    display: none
-}
-
-.white{
-    color: white
-}
-
-.red{
-    color: red;
-}
-
-.blue{
-    color: blue;
 }
