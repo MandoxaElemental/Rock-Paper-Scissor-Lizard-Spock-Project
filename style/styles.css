@@ -189,6 +189,15 @@ body{
     color: black;
 }
 
+.forwardBack > button {
+    border: none;
+    font-size: 20px;
+}
+.forwardBack > button:hover{
+    border: none;
+    background-color: #ffffff7f;
+}
+
 /* Mode */
 .mode{
     background-color: #525F8C;
@@ -292,4 +301,34 @@ body{
     width: 140px;
     height: 140px;
     filter: brightness(100%)
+}
+
+.gameplayBottomDiv{
+    background-color: #525F8C;
+    position: absolute;
+    top: 420px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.gameplayBottomDiv > #gameplayBack{
+    margin-top: 50px;
+}
+
+#gun{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    border: none;
+    background-color: #ffffff00;
+    background-image: url(/assets/pokeball-pokemon-catch.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.inteleon{
+    height: 100px;
+    width: auto;
 }

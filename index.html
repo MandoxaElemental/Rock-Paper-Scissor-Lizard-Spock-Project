@@ -105,12 +105,12 @@
         <div class="player1grid">
             <h2>Player 1 Icon</h2>
             <img id="extraPlayer1Icon" src="/assets/EthanChallenge.png" alt="player1">
-            <div><button id="player1Back"><</button> <button id="player1Forward">></button></div>
+            <div class="forwardBack"><button id="player1Back"><</button> <button id="player1Forward">></button></div>
         </div>
         <div class="player1grid">
             <h2>Player 2 Icon</h2>
             <img id="extraPlayer2Icon" src="/assets/VSSilver.png" alt="player1">
-            <div><button id="player2Back"><</button> <button id="player2Forward">></button></div>
+            <div class="forwardBack"><button id="player2Back"><</button> <button id="player2Forward">></button></div>
         </div>
     </div>
  </div>
@@ -138,7 +138,7 @@
           <br>
           <h4>Kleavor - The Axe Pokémon</h4>
           <p>Type: Bug/Rock</p>
-          <p>Abilities:
+          <p><b>Abilities:</b>
             <br>Swarm
             <br>Sheer Force
             <br>Sharpness (HA)</p>
@@ -160,7 +160,7 @@
           <br>
           <h4>Kleavor - The Mantis Pokémon</h4>
           <p>Type: Bug/Flying</p>
-          <p>Abilities:
+          <p><b>Abilities:</b>
             <br>Swarm
             <br>Technician
             <br>Steadfast (HA)</p>
@@ -181,7 +181,7 @@
           <br>
           <h4>Scizor - The Pincer Pokémon</h4>
           <p>Type: Bug/Steel</p>
-          <p>Abilities:
+          <p><b>Abilities:</b>
             <br>Swarm
             <br>Technician
             <br>Light Metal (HA)</p>
@@ -201,7 +201,7 @@
           <br>
           <h4>Scrafty - The Hoodlum Pokémon</h4>
           <p>Type: Dark/Fighting</p>
-          <p>Abilities:
+          <p><b>Abilities:</b>
             <br>Shed Skin
             <br>Moxie
             <br>Intimidate (HA)</p>
@@ -222,7 +222,7 @@
           <br>
           <h4>Mewtwo - The Genetic Pokémon</h4>
           <p>Type: Psychic</p>
-          <p>Abilities:
+          <p><b>Abilities:</b>
             <br>Pressure
             <br>Unnerve (HA)</p>
             <h4>Pokédex Entry:</h4>
@@ -241,7 +241,7 @@
           <br>
           <h4>Inteleon - The Secret Agent Pokémon</h4>
           <p>Type: Water</p>
-          <p>Abilities:
+          <p><b>Abilities:</b>
             <br>Torrent
             <br>Sniper (HA)</p>
             <h4>Pokédex Entry:</h4>
@@ -334,7 +334,11 @@
             <button id="spock"><img class="gameIcon" src="./assets/Mewtwo.png" alt=""><p>Spock</p></button>
             <h2 id="result"></h2>
         </div>
-        <button id="gameplayBack" class="start">BACK</button>
+        <div class="gameplayBottomDiv">
+            <button id="gameplayBack" class="start">BACK</button> <button id="gun"><img id="inteleonBtn" class="inteleon" src="./assets/Inteleon.png" alt="inteleon"></button>
+        </div>
+
+        <div id="resultPopover"></div>
     </div>
 
     <!-- Audio -->
