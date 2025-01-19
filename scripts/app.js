@@ -5,6 +5,7 @@ let Scissor = document.getElementById("scissor");
 let Lizard = document.getElementById("lizard");
 let Spock = document.getElementById("spock");
 let Gun = document.getElementById("gun");
+let InteleonBtn = document.getElementById("inteleonBtn")
 let EndResult = document.getElementById("result");
 let CPUChoice = "";
 let Result = "";
@@ -612,6 +613,8 @@ function GameResult() {
         if (CPUChoice == "Inteleon") {
           Result = `You have picked ${PlayerChoice}; your Opponent picked ${CPUChoice}; THE GAME IS A DRAW; NO ONE WINS...`;
           TieAudio.play();
+          Winner.innerText = "Draw"
+          Winner.className = "white heartbeat"
           DisableFunction();
         } else {
           Result = `Player 1 picked ${PlayerChoice}; Player 2 picked ${CPUChoice}; GUN BEATS EVERYTHING; PLAYER 1 WINS THIS ROUND`;
@@ -753,13 +756,13 @@ Gun.addEventListener("click", function () {
       GameOver();
     }
   });
-  let Inteleon = document.getElementById("inteleonBtn")
-  Gun.addEventListener("mouseover"), function (e){
-    Inteleon.className = "inteleon fadeIn"
-  };
-  Gun.addEventListener("mouseout"), function (e){
-    Inteleon.className = "inteleon zoomerOut"
-  };
+Gun.addEventListener("mouseover", function () {
+    InteleonBtn.className = 'inteleon fadeIn'
+  });
+Gun.addEventListener("mouseout", function () {
+    InteleonBtn.className = 'inteleon fadeOut'
+  });
+
 
 // Extras
 let Player1IconExtra = document.getElementById("extraPlayer1Icon");

@@ -183,6 +183,7 @@ body{
 .extrasGrid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .extrasGrid > div > h2 {
@@ -196,6 +197,10 @@ body{
 .forwardBack > button:hover{
     border: none;
     background-color: #ffffff7f;
+}
+.icon{
+    height: 100px;
+    width: auto;
 }
 
 /* Mode */
@@ -271,9 +276,10 @@ body{
 }
 
 .gameplay{
-    padding: 20px 0px;
+    padding: 5px 0px;
     margin-bottom: 50px;
     background-color: rgba(255, 255, 255, 0.179);
+    height: 1000px;
 }
 .gameplay > button{
     background-image: url('/assets/pokeball-pokemon-catch.svg');
